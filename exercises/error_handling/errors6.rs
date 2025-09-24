@@ -22,7 +22,7 @@ enum ParsePosNonzeroError {
 
 impl ParsePosNonzeroError {
     fn from_creation(err: CreationError) -> ParsePosNonzeroError {
-        ParsePosNonzeroError::Creation(err)
+        ParsePosNonzeroError::ParseInt(err)
     }
     // TODO: add another error conversion function here.
     // fn from_parseint...
